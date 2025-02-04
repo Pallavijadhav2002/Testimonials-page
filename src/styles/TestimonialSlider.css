@@ -1,0 +1,108 @@
+/* Gradient Background */
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    height: 320px;
+    margin: auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Card */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.testimonial-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.testimonial-card h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.testimonial-card p {
+    color: #f1f1f1;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Star Rating */
+.stars {
+    margin-top: 10px;
+}
+
+.star {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.empty {
+    color: lightgray;
+}
+
+/* Navigation Buttons */
+button.prev, button.next {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease;
+}
+
+button.prev:hover, button.next:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #311213, #0f0806);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
